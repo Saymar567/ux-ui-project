@@ -1,10 +1,9 @@
+import "../App.css"
 function Homepage({shoes}){
     return(
-        <>
-{shoes.map((shoe)=>{
-<img src={shoe.img} alt="" />
-})}
-        </>
+        <div className="homepage">
+            {/*pop up*/}
+        </div>
     )
 }
 export default Homepage

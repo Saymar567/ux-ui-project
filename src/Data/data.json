@@ -1,0 +1,40 @@
+{
+"name": "shoes",
+"results": [
+    {
+        "id": "1",
+        "title": "ANIKA",
+        "image": "./src/assets/images/Anika-boots.png",
+        "prize": 60.00,
+        "description": "Botas cowboy marrones de caña alta con un tacón elegante y una cremallera lateral práctica. La piel vegana de alta calidad se mezcla con la esencia de la elegancia cowboy, dando vida a un estilo único que dejará tu huella en cualquier momento del año",
+        "sizes": [36, 37, 38, 39, 40, 41]
+    
+    },
+    {
+        "id": 2,
+        "title": "ANDREA" ,
+        "image": "./src/assets/images/Andrea-boots.png",
+        "prize": 70.00,
+        "description": "aosjdo" ,
+        "sizes": [36, 37, 38, 39, 40, 41]
+    },
+    {
+            "id": 3,
+            "title": "ALISIA BLACK" ,
+            "image": "./src/assets/images/Alisia-black-boots.png",
+            "prize": 70.00,
+            "description": "aosjdo" ,
+            "sizes": [36, 37, 38, 39, 40, 41]
+        
+    },
+    {
+        "id": 4,
+        "title": "ARLET" ,
+        "image": "./src/assets/images/Arlet-boots.png",
+        "prize": 50.00,
+        "description": "aosjdo" ,
+        "sizes": [36, 37, 38, 39, 40, 41]
+    }
+]
+
+}

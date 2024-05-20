@@ -5,9 +5,9 @@ import Homepage from './Pages/Homepage'
 import Products from './Pages/Products'
 import Details from './Pages/Details'
 import { Routes, Route } from 'react-router-dom'
-
+import data from "./Data/data.json"
 function App() {
-  const [shoes, setShoes] =useState([])
+  const [shoes, setShoes] =useState(data)
 
   return (
     <>
@@ -15,7 +15,7 @@ function App() {
      <Routes>
 <Route path="/home" element={<Homepage/>}/>
 <Route path="/products" element={<Products shoes={shoes} setShoes={setShoes}/>}/>
-<Route path="/details/:id" element={<Details/>}/>
+<Route path="/details/:q" element={<Details shoes={shoes}/>}/>
 
 
      </Routes>
