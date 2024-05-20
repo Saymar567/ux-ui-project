@@ -1,11 +1,10 @@
 import "../App.css"
-import { Link } from "react-router-dom"
+import pasos from "../assets/images/b5adb323006f35f804937799be07efb8.png"
+
 function Navbar(){
     return (
         <nav className="navbar">
-<Link to="/home"><h2>Home</h2></Link>
-<Link to="/products"><h2>Products</h2></Link>
-
+            <img src={pasos} alt="" />
 
         </nav>
     )
