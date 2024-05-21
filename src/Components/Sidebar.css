@@ -9,8 +9,48 @@
     top: 0px;
     padding-left: 2vh;
     padding-right: 10px;
-    
+    animation-name: slidein;
+    animation-duration: 500ms;
+
 }
+.slideout{
+    animation-name: slideout;
+    animation-duration: 500ms;   
+}
+
+@keyframes slideout {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+@keyframes slidein {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slidedown {
+    from {
+      transform:translateY(-100%);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  
+
 
 .sideBarUl{
 border-radius: 2px solid white;
@@ -27,8 +67,14 @@ padding-bottom: 5vh;
 .colection{
 display: flex;
 flex-direction: row;
-
 align-items: center;
+
+
+}
+
+.dropDown li{
+    animation-name: slidedown;
+    animation-duration: 500ms;
 }
 
 .arrows{

@@ -11,6 +11,7 @@
     padding: 18px;
     font-family: "Roboto Mono";
 
+
 }
 
 
@@ -22,7 +23,10 @@
 .burger{
     width: 30px;
     height: 30px;  
+
+
 }
+  
 
 .search{
     width: 22px;
