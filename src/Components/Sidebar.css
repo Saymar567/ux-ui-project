@@ -1,0 +1,46 @@
+.sideBar{
+    z-index: 2;
+    height:100%;
+    width:80%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-left: 2vh;
+    padding-right: 10px;
+    
+}
+
+.sideBarUl{
+border-radius: 2px solid white;
+font-family: "Roboto Mono";
+list-style: none;
+padding-bottom: 10vh;
+}
+
+.backBtn{
+padding-top: 2vh;
+padding-bottom: 5vh;
+}
+
+.colection{
+display: flex;
+flex-direction: row;
+
+align-items: center;
+}
+
+.arrows{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.sideBarUl li{
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    text-decoration: solid white;
+    border-bottom: 1px solid white;
+}
+
