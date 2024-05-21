@@ -5,7 +5,7 @@ import search from "../assets/images/Vector.png"
 import profile from "../assets/images/profile.png"
 import shop from "../assets/images/Vector-2.png"
 import "./Navbar.css"
-
+import { Link } from "react-router-dom"
 
 function Navbar({setShowSidebar}){
     return (
@@ -14,7 +14,7 @@ function Navbar({setShowSidebar}){
             <img className="logo" src={pasos} alt="" />
             <img className="search" src={search} alt="" />
             <img className="profile" src={profile} alt="" />
-            <img className="shop" src={shop} alt="" />
+           <Link to="/cart"> <img className="shop" src={shop} alt="" /></Link>
 
         </nav>
     )

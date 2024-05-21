@@ -25,8 +25,8 @@ function App() {
      <Routes>
 <Route path="/" element={<Homepage/>}/>
 <Route path="/products" element={<Products shoes={shoes} setShoes={setShoes}/>}/>
-<Route path="/details/:q" element={<Details shoes={shoes} addToCart={addToCart}/>}/>
-<Route path="/cart" element={<CartComponent cart={cart} />}/>
+<Route path="/details/:q" element={<Details shoes={shoes} addToCart={addToCart} cart={cart}/>}/>
+<Route path="/cart" element={<CartComponent shoes={shoes} cart={cart} />}/>
 
 
      </Routes>

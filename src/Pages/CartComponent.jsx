@@ -1,9 +1,16 @@
 import "./CartComponent.css"
-function CartComponent({cart}) {
+function CartComponent({shoes}) {
     return(
-        <>
-       <p>helloooooo</p> 
-        </>
+        <div>
+       {shoes.results.map((shoe)=>{
+        return(
+            <>
+            <h3>{shoe.title}</h3>
+</>
+    )
+        })}
+    
+        </div>
     )
 }
 export default CartComponent
