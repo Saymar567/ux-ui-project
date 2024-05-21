@@ -7,6 +7,8 @@ import Details from './Pages/Details'
 import CartComponent from './Pages/CartComponent'
 import { Routes, Route } from 'react-router-dom'
 import data from "./Data/data.json"
+import Sidebar from './Components/Sidebar'
+
 function App() {
   const [shoes, setShoes] =useState(data)
   const [cart, setCart] = useState([])
@@ -14,9 +16,12 @@ function App() {
     setCart([...cart, item])
   }
 
+  const[showSidebar, setShowSidebar] = useState(false)
+
   return (
     <>
-     <Navbar />
+     <Navbar setShowSidebar={setShowSidebar}/>
+    {showSidebar && <Sidebar setShowSidebar={setShowSidebar}/>}
      <Routes>
 <Route path="/" element={<Homepage/>}/>
 <Route path="/products" element={<Products shoes={shoes} setShoes={setShoes}/>}/>

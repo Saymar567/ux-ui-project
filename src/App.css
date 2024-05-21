@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('./assets/fonts/RobotoMono-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./assets/fonts/RobotoSerif_28pt-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +32,18 @@ body{
   }
 }
 
+<<<<<<< HEAD
 
   
 
 
+=======
+body{
+  min-height: 100vh;
+
+}
+
+#root{
+  height: 100vh;
+}
+>>>>>>> bbc128ac5fe09518836dd0f4d3b83531bf111cd4

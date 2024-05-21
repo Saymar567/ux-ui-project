@@ -1,5 +1,5 @@
 import "./CartComponent.css"
-function CartComponent() {
+function CartComponent({cart}) {
     return(
         <>
        <p>helloooooo</p> 
