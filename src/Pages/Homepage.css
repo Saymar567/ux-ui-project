@@ -1,0 +1,28 @@
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url("./src/assets/images/background-image-homepage.png");
+  width: 100vw;
+  height: 100vh;
+  }
+  .homepage p {
+    color: white
+  }
+
+  .homepage-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    opacity: .4;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 50vw;
+    height: 15vh;
+  }
