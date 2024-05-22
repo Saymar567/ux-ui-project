@@ -8,6 +8,15 @@ function Products({ shoes }) {
 
 
     return (
+        <div className="productswrap">
+            <div className=" generalInfo">
+            <p className="breadCrum">Home &gt; Categories &gt; Cowboy boots</p>
+            <h1 className="title">COWBOY BOOTS</h1>
+            <section className="filter">
+                <p>Filter</p>
+                <p>4 Products</p>
+            </section>
+            </div>
         <div className="products">
             {shoes.results.map((shoe) => {
                 return (
@@ -21,6 +30,7 @@ function Products({ shoes }) {
                     </>
                 )
             })}
+        </div>
         </div>
     )
 }
