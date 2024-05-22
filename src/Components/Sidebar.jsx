@@ -4,6 +4,7 @@ import backArrow from "../assets/images/Vector-3.png"
 import downArrow from "../assets/images/Polygon.png"
 import upArrow from "../assets/images/Polygon (1).png"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
 
@@ -27,7 +28,9 @@ function Sidebar({ setShowSidebar }) {
             <div className={hideSidebar ? "sideBar slideout" : "sideBar"}>
                 <img className="backBtn" onClick={() => handleHideSidebar()} src={backArrow} alt="" />
                 <ul className="sideBarUl">
-                    <li>NEW IN</li>
+                    <Link to={"/products"}>
+                    <li onClick={handleHideSidebar}>NEW IN</li>
+                    </Link>
                     <li>BEST SELLER</li>
                     <li onClick={() => setShowDropdown(!showDropdown)} className="colection">VIEW ALL COLLECTION <img className="arrows" src={showDropdown ? upArrow : downArrow} alt="" /></li>
                     {showDropdown && <div className="dropDown">

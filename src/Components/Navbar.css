@@ -7,38 +7,43 @@
     box-sizing: border-box;
     background-color: black;
     border-radius: 0px 0px 16px 16px;
-    align-items: flex-start;
     padding: 18px;
     font-family: "Roboto Mono";
-
-
+    align-items: center;
+    justify-content:space-between;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    
 }
+
 
 
 .logo{
-    width: 111px;
-    height: 26px;   
+    width: 8em;   
 }
 
 .burger{
-    width: 30px;
-    height: 30px;  
-
-
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: 1em;
 }
   
 
 .search{
-    width: 22px;
-    height: 22px;    
+    width: 1.5em;
+    height: 1.5em;
+    
 }
 
 .profile{
-    width: 22px;
-    height: 22px; 
+    width: 1.5em;
+    height: 1.5em;
+    margin-left:1em;
 }
 
 .shop{
-    width: 22px;
-    height: 22px; 
+    width: 1.5em;
+    height: 1.5em;
+    margin-left:1em;
 }

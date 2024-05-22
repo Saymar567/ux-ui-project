@@ -11,6 +11,7 @@
     padding-right: 10px;
     animation-name: slidein;
     animation-duration: 500ms;
+    text-decoration: none;
 
 }
 .slideout{
@@ -88,5 +89,11 @@ align-items: center;
     padding-bottom: 3vh;
     text-decoration: solid white;
     border-bottom: 1px solid white;
+    text-decoration: none;
 }
+
+.sideBar a {
+    text-decoration: none;
+    color: inherit
+  }
 
