@@ -12,7 +12,6 @@
     animation-name: slidein;
     animation-duration: 500ms;
     text-decoration: none;
-
 }
 .slideout{
     animation-name: slideout;
