@@ -3,23 +3,132 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
     border-radius: 10px;
   }
   .details-button-section{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
+    padding-bottom: 3em;
+    
   }
-  .button {
-    border-radius: 10px;
-    border: none
+  .btnPosition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .button-liked {
-    border-radius: 10px;
+  .button{
+    width: 38px;
+    height: 38px;
+    font-size:18px;
+    border-radius: 50%;
+    background-color: #E3D9CD;
     border: none;
-    background-color: black;
-    color: white
   }
 
   
+  .button-liked {
+    background-color: black;
+    color: white;
+    width: 38px;
+    height: 38px;
+    font-size:18px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .titleAndCounter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    
+  }
+
+  .detailsImage{
+    width: 100%;
+  }
+  
+  .size{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+  }
+
+  .cartButton{
+    background-color: black;
+    width: 80vw;
+    height: 3rem;
+    color: white;
+    font-family: "Roboto Mono";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 8px;
+    gap: 10px;
+    
+  }
+  .detailDescription{
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    
+  }
+  .readLess{
+    margin-bottom: 3em;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 18px;
+
+  }
+
+  .payOptions{
+    color: var(--Mobile-background, #000);
+    font-family: "Roboto Mono";
+    padding-top: 1em;
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .sizeGuide{
+    border-radius: 39px;
+    border: 2px solid #E3D9CD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+
+  .detailsPadding{
+    padding: 5vw;
+    font-family: "Roboto Mono";
+  }
+
+.detailsTitle{
+font-family: "Roboto Serif";
+}
+
+.littleInfo{
+display: flex;
+flex-direction: row;
+gap: 10px;
+align-items: center;
+padding-bottom: 14px;
+
+}
+
+
