@@ -1,0 +1,52 @@
+import "./Sidebar.css"
+
+import backArrow from "../assets/images/Vector-3.png"
+import downArrow from "../assets/images/Polygon.png"
+import upArrow from "../assets/images/Polygon (1).png"
+import { useState } from "react"
+import { Link } from "react-router-dom"
+
+
+
+
+function Sidebar({ setShowSidebar }) {
+
+    const [showDropdown, setShowDropdown] = useState(false)
+
+    const [hideSidebar, setHideSidebar]= useState(false)
+
+    function handleHideSidebar (){
+        setHideSidebar(true)
+        setTimeout(() => {
+            setShowSidebar(false)
+        }, 480);
+        
+    }
+
+    return (
+        <>
+            <div className={hideSidebar ? "sideBar slideout" : "sideBar"}>
+                <img className="backBtn" onClick={() => handleHideSidebar()} src={backArrow} alt="" />
+                <ul className="sideBarUl">
+                    <Link to={"/products"}>
+                    <li onClick={handleHideSidebar}>NEW IN</li>
+                    </Link>
+                    <li>BEST SELLER</li>
+                    <li onClick={() => setShowDropdown(!showDropdown)} className="colection">VIEW ALL COLLECTION <img className="arrows" src={showDropdown ? upArrow : downArrow} alt="" /></li>
+                    {showDropdown && <div className="dropDown">
+                        <li>ANKLE BOOTS</li>
+                        <li>CASUAL</li>
+                        <li>COWBOY</li>
+                        <li>FALL WINTER</li>
+                    </div>}
+
+                    <li>CONTACT</li>
+                    <li>ABOUT US</li>
+                </ul>
+
+
+            </div>
+        </>
+    )
+}
+export default Sidebar

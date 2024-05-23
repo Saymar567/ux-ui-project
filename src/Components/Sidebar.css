@@ -1,0 +1,98 @@
+.sideBar{
+    z-index: 2;
+    height:100%;
+    width:80%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-left: 2vh;
+    padding-right: 10px;
+    animation-name: slidein;
+    animation-duration: 500ms;
+    text-decoration: none;
+    align-items: center;
+}
+.slideout{
+    animation-name: slideout;
+    animation-duration: 500ms;   
+}
+
+@keyframes slideout {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+@keyframes slidein {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slidedown {
+    from {
+      transform:translateY(-100%);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  
+
+
+.sideBarUl{
+border-radius: 2px solid white;
+font-family: "Roboto Mono";
+list-style: none;
+padding-bottom: 10vh;
+}
+
+.backBtn{
+padding-top: 2vh;
+padding-bottom: 5vh;
+}
+
+.colection{
+display: flex;
+flex-direction: row;
+align-items: center;
+
+
+}
+
+.dropDown li{
+    animation-name: slidedown;
+    animation-duration: 500ms;
+}
+
+.arrows{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.sideBarUl li{
+    padding: 2vh;
+    text-decoration: solid white;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+.sideBar a {
+    text-decoration: none;
+    color: inherit
+  }
+

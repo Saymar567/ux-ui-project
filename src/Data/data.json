@@ -1,0 +1,65 @@
+{
+    "name": "shoes",
+    "results": [
+        {
+            "id": "1",
+            "title": "ANIKA",
+            "image": "https://ybuujnpmnwoevsvbvplu.supabase.co/storage/v1/object/public/Pasos/Anika-boots.png?t=2024-05-21T13%3A27%3A40.966Z",
+            "prize": 60.00,
+            "description": "Botas cowboy marrones de caña alta con un tacón elegante y una cremallera lateral práctica. La piel vegana de alta calidad se mezcla con la esencia de la elegancia cowboy, dando vida a un estilo único que dejará tu huella en cualquier momento del año",
+            "sizes": [
+                36,
+                37,
+                38,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "id": "2",
+            "title": "ANDREA",
+            "image": "https://ybuujnpmnwoevsvbvplu.supabase.co/storage/v1/object/public/Pasos/Andrea-boots.png?t=2024-05-21T13%3A33%3A12.778Z",
+            "prize": 70.00,
+            "description": "aosjdo",
+            "sizes": [
+                36,
+                37,
+                38,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "id": "3",
+            "title": "ALISIA",
+            "image": "https://ybuujnpmnwoevsvbvplu.supabase.co/storage/v1/object/public/Pasos/Alisia-black-boots.png?t=2024-05-21T13%3A25%3A42.660Z",
+            "prize": 70.00,
+            "description": "aosjdo",
+            "sizes": [
+                36,
+                37,
+                38,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "id": "4",
+            "title": "ARLET",
+            "image": "https://ybuujnpmnwoevsvbvplu.supabase.co/storage/v1/object/public/Pasos/Arlet-boots.png?t=2024-05-21T13%3A34%3A40.313Z",
+            "prize": 50.00,
+            "description": "aosjdo",
+            "sizes": [
+                36,
+                37,
+                38,
+                39,
+                40,
+                41
+            ]
+        }
+    ]
+}
