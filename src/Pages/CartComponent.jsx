@@ -2,6 +2,7 @@ import "./CartComponent.css"
 import { useParams } from "react-router-dom"
 import { useState } from "react";
 import Button from "../Components/Button";
+import { Link } from "react-router-dom";
 function CartComponent({ cart, setCart }) {
     /* console.log(cart) */;
     // const {q} = useParams()
@@ -65,7 +66,7 @@ function CartComponent({ cart, setCart }) {
                         <div className="check-out-buttons">
 
                         <button className="cart-proceed-button">PROCEED TO CHECKOUT</button>
-                        <button className="cart-continue-shopping">CONTINUE SHOPPING</button>
+                       <Link to="/products"> <button className="cart-continue-shopping">CONTINUE SHOPPING</button></Link>
                         </div>
 
                     </>
