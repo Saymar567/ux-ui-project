@@ -1,0 +1,50 @@
+.profileDiv{
+    margin-top: 8.5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: "Roboto Mono";
+    
+img {
+    margin-right: 20px;
+}
+}
+
+
+.profileDiv p{
+    display: flex;
+    align-items: center;
+}
+
+.profileTitle{
+    font-family:"Roboto Serif";
+    padding: 20px 0;
+    font-size: 16px;
+    
+}
+
+.phoneMail{
+
+border-bottom: solid 2px rgb(189, 184, 184);
+
+}
+
+.phoneMail p{
+padding-bottom: 20px;
+}
+
+
+
+.smallDetails p{
+
+padding-top: 20px;
+}
+
+.logout{
+    padding-top: 20px;
+    border-top: solid 2px rgb(189, 184, 184);
+
+}
+
+.settings{
+    padding-bottom: 20px;
+}

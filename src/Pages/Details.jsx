@@ -26,9 +26,7 @@ const Details = ({ shoes, cart, addToCart }) => {
         addToCart({...found, selected})
 
     }
-    const changeColor = ()=>{
-        cart.style.color = Math.random({})
-    }
+
 
     return (
         <div>
@@ -64,7 +62,7 @@ const Details = ({ shoes, cart, addToCart }) => {
                        
                     </div>
                     <div className="btnPosition"> 
-                    <button className="cartButton" onClick={handleAddToCart && change}> <img src={CartIcon} alt="" />ADD TO CART</button>
+                    <button className="cartButton" onClick={handleAddToCart}> <img src={CartIcon} alt="" />ADD TO CART</button>
                     
                     </div>
                     <p className="payOptions">More options of payment</p>
