@@ -19,8 +19,9 @@ function Navbar({setShowSidebar}){
             </div>
             <div className="icons">
             <img className="search" src={search} alt="" />
+            <Link to={"/profile"}>
             <img className="profile" src={profile} alt="" />
-
+            </Link>
            <Link to="/cart"> <img className="shop" src={shop} alt="" /></Link>
           
             </div>

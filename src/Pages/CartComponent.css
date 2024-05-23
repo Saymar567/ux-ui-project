@@ -3,6 +3,11 @@
     flex-direction: row;
     margin-top: 90px;
     font-family: Roboto Mono;
+    padding: 0 5vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    
 }
 .display-cart p:nth-child(3){
 opacity: 50%
@@ -15,18 +20,119 @@ opacity: 50%
     font-family: Roboto Mono;
     flex-direction: column;
     img {
-        width: 20%;
-        height: 4%;
+        width: 117px;
+        height: 137px;
+        padding-right: 10px;
     }
 }
 
 .add-items {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
-    border-radius: 10px;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid #b3a290;
+    border-radius: 20px;
     gap: 10px;
     font-family: Roboto Mono;
+    margin-left: 40px;
+    padding: 3px;
+
+}
+.add-items button  {
+    border-radius: 30px;
+    margin-bottom: 2px;
+    border: 2px solid #DACDBF;
+    border-radius: 17px;
+    padding: 2px 4px;
+    height: 35px;
+    width:35px; 
+
+}
+.cart-increment-button{
+   background-color: #E3D9CD;
+}
+.cart-prize{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90vw;
     
 }
 
+.cart-proceed-button {
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 18px;
+    
+}
+.cart-continue-shopping{
+    background-color: rgba(218, 205, 191, 0.20);
+    border-radius: 8px;
+    border:none;
+    padding: 10px 18px;
+
+}
+.cart-discount-section {
+    display: flex;
+    flex-direction: row;
+    background-color: #DACDBF;
+    border: none;
+    gap: 50px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+p {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+}
+
+.cart-discount-section button {
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: none
+}
+
+.order-amount{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding-top: 35px;
+padding-bottom: 10px;
+border-bottom: 1px dashed grey;
+
+}
+.tax{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 1px dashed grey;
+}
+
+.total-payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+.check-out-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px
+}

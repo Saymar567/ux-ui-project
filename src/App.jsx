@@ -8,6 +8,7 @@ import CartComponent from './Pages/CartComponent'
 import { Routes, Route } from 'react-router-dom'
 import data from "./Data/data.json"
 import Sidebar from './Components/Sidebar'
+import InfoPage from './Pages/InfoPage'
 
 function App() {
   const [shoes, setShoes] =useState(data)
@@ -30,7 +31,7 @@ function App() {
 <Route path="/products" element={<Products shoes={shoes} setShoes={setShoes}/>}/>
 <Route path="/details/:q" element={<Details shoes={shoes} addToCart={addToCart} cart={cart}/>}/>
 <Route path="/cart" element={<CartComponent shoes={shoes} cart={cart} setCart={setCart} />}/>
-
+<Route path='/profile' element={<InfoPage/>}/>
 
      </Routes>
     </>

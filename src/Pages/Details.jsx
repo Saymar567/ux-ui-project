@@ -27,6 +27,7 @@ const Details = ({ shoes, cart, addToCart }) => {
 
     }
 
+
     return (
         <div>
             <div className="details-card">
@@ -62,7 +63,7 @@ const Details = ({ shoes, cart, addToCart }) => {
                     </div>
                     <div className="btnPosition"> 
                     <button className="cartButton" onClick={handleAddToCart}> <img src={CartIcon} alt="" />ADD TO CART</button>
-                    <button onClick={()=> navigate(-1)} >Go back</button>
+                    
                     </div>
                     <p className="payOptions">More options of payment</p>
 
