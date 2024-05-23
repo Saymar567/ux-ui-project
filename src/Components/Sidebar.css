@@ -12,6 +12,7 @@
     animation-name: slidein;
     animation-duration: 500ms;
     text-decoration: none;
+    align-items: center;
 }
 .slideout{
     animation-name: slideout;
@@ -84,8 +85,7 @@ align-items: center;
 }
 
 .sideBarUl li{
-    padding-top: 1vh;
-    padding-bottom: 3vh;
+    padding: 2vh;
     text-decoration: solid white;
     border-bottom: 1px solid white;
     text-decoration: none;

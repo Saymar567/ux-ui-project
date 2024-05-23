@@ -1,13 +1,18 @@
 .display-cart{
     display: flex;
     flex-direction: row;
-    margin-top: 90px
+    margin-top: 90px;
+    font-family: Roboto Mono;
+}
+.display-cart p:nth-child(3){
+opacity: 50%
 }
 .cart {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    font-family: Roboto Mono;
     flex-direction: column;
     img {
         width: 20%;
@@ -20,6 +25,8 @@
     justify-content: center;
     border: 1px solid black;
     border-radius: 10px;
-    gap: 10px
+    gap: 10px;
+    font-family: Roboto Mono;
+    
 }
 

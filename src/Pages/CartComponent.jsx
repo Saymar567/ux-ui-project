@@ -32,8 +32,9 @@ function CartComponent({ cart, setCart}) {
                         <img src={item.image} alt={item.title} />
                         <div>
 
-                        <h3>{item.title} {item.selected}</h3>
+                        <h3>{item.title} </h3>
                         <p>{(item.prize * count)} €</p>
+                        <p>Size {item.selected}</p>
                         <div className="add-items">
 
                         <button onClick={count > 0 ? handleDecrement : undefined}>-</button>
