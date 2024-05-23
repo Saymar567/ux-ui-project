@@ -1,20 +1,27 @@
 import "./CartComponent.css"
 import { useParams } from "react-router-dom"
 import { useState } from "react";
-function CartComponent({ cart }) {
-    console.log(cart);
+import Button from "../Components/Button";
+function CartComponent({ cart, setCart}) {
+    /* console.log(cart) */;
     // const {q} = useParams()
     // const found = shoes.results.find(element => q === element.id)
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
     const handleIncrement =() =>{
-        setCount(count +1)
+        setCount(count +1);
+        
     }
     const handleDecrement =()=>{
         setCount(count -1)
-        if(count === 0){
-            return 0
-        }
+        
     }
+
+   const handleDelete= (id)=>{
+    const itemDeleted = cart.filter(item => item.id !== id)
+    return setCart(itemDeleted)
+    }
+    console.log(cart)
+   
     return (
       
 
@@ -25,11 +32,15 @@ function CartComponent({ cart }) {
                         <img src={item.image} alt={item.title} />
                         <div>
 
-                        <h3>{item.title}</h3>
-                        <p>{item.prize} €</p>
+                        <h3>{item.title} {item.selected}</h3>
+                        <p>{(item.prize * count)} €</p>
+                        <div className="add-items">
+
+                        <button onClick={count > 0 ? handleDecrement : undefined}>-</button>
                         {count}
                         <button onClick={handleIncrement}>+</button>
-                        <button onClick={handleDecrement}>-</button>
+                        </div>
+                        <button onClick={()=>handleDelete(item.id)}>Delete</button>
                         </div>
                     
                     </div>

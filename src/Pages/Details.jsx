@@ -1,15 +1,22 @@
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import data from "../Data/data.json"
 import "./Details.css"
 import { useState } from "react"
 import Button from "../Components/Button"
+import { Navigate } from "react-router-dom"
 const Details = ({shoes, cart, addToCart})=>{
     const {q} = useParams()  
     const found = shoes.results.find(element => q === element.id);
     const [pressButton, setPressButton] = useState(false);
-    const [selected, setSelected] = useState(36)
+    const [selected, setSelected] = useState(null);
+    const navigate= useNavigate()
+
+    const getSelected = ()=>{
+        setSelected(selected)
+        }
+    
     const handleAddToCart = ()=>{
-        addToCart(found)
+        addToCart({...found, selected})
     }
     
 
@@ -31,14 +38,18 @@ const Details = ({shoes, cart, addToCart})=>{
                 <button className={pressButton ? "button-liked" : "button"} onClick={toggleButton}>{found.sizes[4]}</button>
                 <button className={pressButton ? "button-liked" : "button"} onClick={toggleButton}>{found.sizes[5]}</button> */}
                 
-                <Button size={found.sizes[0]} />
-                <Button size={found.sizes[1]} />
-                <Button size={found.sizes[2]} />
-                <Button size={found.sizes[3]} />
-                <Button size={found.sizes[4]} />
+  
+                   <Button selected={selected} setSelected={setSelected} size={found.sizes[0]} />
+                <Button selected={selected} setSelected={setSelected} size={found.sizes[1]} />
+                <Button selected={selected} setSelected={setSelected} size={found.sizes[2]} />
+                <Button selected={selected} setSelected={setSelected} size={found.sizes[3]} />
+                <Button selected={selected} setSelected={setSelected} size={found.sizes[4]} />
+
                 </div>
 
                <button onClick={handleAddToCart}>Add to cart</button>
+               <br></br>
+               <button onClick={()=> navigate(-1)} >Go back</button>
           
 
         </div>

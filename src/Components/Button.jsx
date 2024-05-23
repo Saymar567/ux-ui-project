@@ -1,12 +1,12 @@
 import { useState } from "react"
-function Button ({size}){
-    const [pressButton, setPressButton] =useState(false)
-    const toggleButton = ()=>{
-setPressButton(!pressButton)
+function Button({ size, selected, setSelected }) {
+    const [pressButton, setPressButton] = useState(false)
+    const toggleButton = () => {
+        setSelected(size)
     }
-    return(
+    return (
         <>
-<button className={pressButton ? "button-liked" : "button"} onClick={toggleButton}>{size}</button>
+         <button className={selected == size ? "button-liked" : "button"} onClick={toggleButton}>{size}</button> 
         </>
     )
 }

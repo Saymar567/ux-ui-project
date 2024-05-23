@@ -12,8 +12,11 @@ import Sidebar from './Components/Sidebar'
 function App() {
   const [shoes, setShoes] =useState(data)
   const [cart, setCart] = useState([])
+  
   const addToCart =(item)=>{
-    setCart([...cart, item])
+
+    setCart([...cart, item]);
+    
   }
 
   const[showSidebar, setShowSidebar] = useState(false)
@@ -26,7 +29,7 @@ function App() {
 <Route path="/" element={<Homepage/>}/>
 <Route path="/products" element={<Products shoes={shoes} setShoes={setShoes}/>}/>
 <Route path="/details/:q" element={<Details shoes={shoes} addToCart={addToCart} cart={cart}/>}/>
-<Route path="/cart" element={<CartComponent shoes={shoes} cart={cart} />}/>
+<Route path="/cart" element={<CartComponent shoes={shoes} cart={cart} setCart={setCart} />}/>
 
 
      </Routes>

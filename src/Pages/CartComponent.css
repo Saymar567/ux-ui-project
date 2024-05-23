@@ -15,3 +15,11 @@
     }
 }
 
+.add-items {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 10px
+}
+
