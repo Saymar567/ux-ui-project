@@ -35,7 +35,7 @@ function CartComponent({ cart, setCart }) {
                             <div>
 
                                 <h3>{item.title} </h3>
-                                <p>€{(item.prize * count).toFixed(2)} </p>
+                                <p>€{item.prize.toFixed(2)} </p>
                                 <p>Size {item.selected}</p>
 
                             </div>
@@ -66,7 +66,7 @@ function CartComponent({ cart, setCart }) {
                         <div className="check-out-buttons">
 
                         <button className="cart-proceed-button">PROCEED TO CHECKOUT</button>
-                       <Link to="/products"> <button className="cart-continue-shopping">CONTINUE SHOPPING</button></Link>
+                       <Link to="/details"> <button className="cart-continue-shopping">CONTINUE SHOPPING</button></Link>
                         </div>
 
                     </>
